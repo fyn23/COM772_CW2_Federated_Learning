@@ -32,6 +32,7 @@ This project implements federated learning on the FEMNIST dataset using the Flow
 1. Download and extract raw FEMNIST data.
 2. Convert to JSON, group by writer, filter users, sample, and split into train/test sets (IID and non-IID).
 3. Output: Per-client data directories for federated simulation.
+4. You will need to paste the outputted directories to data_niid or data_iid under preprocess/femnist/ or change the directory in line 42 of client.py to match the training/test splits
 
 ## Federated Learning Flow
 
