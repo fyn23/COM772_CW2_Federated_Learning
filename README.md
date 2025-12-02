@@ -1,34 +1,84 @@
-# FEMNIST Dataset
+# FEMNIST Federated Learning with Flower
 
-## Setup Instructions
-- pip3 install numpy
-- pip3 install pillow
-- Run ```./preprocess.sh``` with a choice of the following tags:
-    - ```-s``` := 'iid' to sample in an i.i.d. manner, or 'niid' to sample in a non-i.i.d. manner; more information on i.i.d. versus non-i.i.d. is included in the 'Notes' section
-    - ```--iu``` := number of users, if iid sampling; expressed as a fraction of the total number of users; default is 0.01
-    - ```--sf``` := fraction of data to sample, written as a decimal; default is 0.1
-    - ```-k``` := minimum number of samples per user
-    - ```-t``` := 'user' to partition users into train-test groups, or 'sample' to partition each user's samples into train-test groups
-    - ```--tf``` := fraction of data in training set, written as a decimal; default is 0.9
-    - ```--smplseed``` := seed to be used before random sampling of data
-    - ```--spltseed``` :=  seed to be used before random split of data
+This project implements federated learning on the FEMNIST dataset using the Flower framework and TensorFlow/Keras. It supports both IID and non-IID data splits, configurable strategies (FedAvg, FedProx), and detailed per-client and global analysis.
 
-i.e.
-- ```./preprocess.sh -s niid --sf 1.0 -k 0 -t sample``` (full-sized dataset)<br/>
-- ```./preprocess.sh -s niid --sf 0.05 -k 0 -t sample``` (small-sized dataset)
+## Project Structure
 
-Make sure to delete the rem_user_data, sampled_data, test, and train subfolders in the data directory before re-running preprocess.sh
+```
+.
+├── model/
+│   ├── cnn.py         # CNN model and FlowerClient definition
+│   ├── client.py      # Client entry point
+│   └── server.py      # Server entry point
+├── preprocess/
+│   └── femnist/       # Scripts for FEMNIST data preprocessing
+├── data_analysis/     # Analysis and plotting scripts
+├── results/           # Output metrics and per-client results
+├── run_federated.sh   # Main orchestration script
+└── README.md
+```
+
+## Key Components
+
+- **run_federated.sh**: Entry point. Launches the server and multiple clients, passing experiment parameters (clients, rounds, epochs, strategy, etc.).
+- **model/server.py**: Starts the federated server, selects strategy (FedAvg/FedProx), manages rounds, aggregates updates, and logs results.
+- **model/client.py**: Loads local FEMNIST data, builds the CNN, wraps it in a FlowerClient, and connects to the server for training and evaluation.
+- **model/cnn.py**: Defines the CNN architecture for 28x28 grayscale FEMNIST images and the FlowerClient class, which handles local training, evaluation, and per-client metric saving.
+- **preprocess/femnist/**: Scripts to download, process, group, filter, sample, and split FEMNIST data into IID and non-IID partitions.
+- **data_analysis/**: Python scripts using pandas and matplotlib to visualize results (accuracy/loss vs. epochs, per-client metrics, strategy comparisons, etc.).
+
+## Data Preprocessing
+
+1. Download and extract raw FEMNIST data.
+2. Convert to JSON, group by writer, filter users, sample, and split into train/test sets (IID and non-IID).
+3. Output: Per-client data directories for federated simulation.
+
+## Federated Learning Flow
+
+1. **Server** broadcasts the global model to all clients each round.
+2. **Clients** train locally for several epochs on their own data, then send updated weights and metrics back.
+3. **Server** aggregates updates (FedAvg or FedProx), updates the global model, and logs metrics.
+4. Repeat for the specified number of rounds.
+
+## Analysis
+
+- Scripts in `data_analysis/` generate plots for:
+  - Accuracy/loss vs. epochs
+  - Per-client evaluation metrics
+  - IID vs. non-IID comparison
+  - FedAvg vs. FedProx performance
+
+## How to Run
+
+1. **Set up environment**  
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. **Preprocess data**  
+   Run scripts in `preprocess/femnist/` as needed.
+
+3. **Run federated experiment**  
+   ```bash
+   bash run_federated.sh
+   ```
+   Adjust variables in the script for your experiment (number of clients, rounds, epochs, strategy, etc.).
+
+4. **Analyze results**  
+   Use scripts in `data_analysis/` to generate plots and summaries.
+
+## Technologies Used
+
+- Python 3.11+
+- TensorFlow/Keras
+- Flower (flwr)
+- pandas, matplotlib
+- Bash
 
 ## Notes
-- More details on i.i.d. versus non-i.i.d.:
-  - In the i.i.d. sampling scenario, each datapoint is equally likely to be sampled. Thus, all users have the same underlying distribution of data.
-  - In the non-i.i.d. sampling scenario, the underlying distribution of data for each user is consistent with the raw data. Since we assume that data distributions vary between user in the raw data, we refer to this sampling process as non-i.i.d.
-- More details on ```preprocess.sh```:
-  - The order in which ```preprocess.sh``` processes data is 1. generating all_data, 2. sampling, 3. removing users, and 4. creating train-test split. The script will look at the data in the last generated directory and continue preprocessing from that point. For example, if the ```all_data``` directory has already been generated and the user decides to skip sampling and only remove users with the ```-k``` tag (i.e. running ```preprocess.sh -k 50```), the script will effectively apply a remove user filter to data in ```all_data``` and place the resulting data in the ```rem_user_data``` directory.
-  - File names provide information about the preprocessing steps taken to generate them. For example, the ```all_data_niid_1_keep_64.json``` file was generated by first sampling 10 percent (.1) of the data ```all_data.json``` in a non-i.i.d. manner and then applying the ```-k 64``` argument to the resulting data.
-- Each .json file is an object with 3 keys:
-  1. 'users', a list of users
-  2. 'num_samples', a list of the number of samples for each user, and 
-  3. 'user_data', an object with user names as keys and their respective data as values; for each user, data is represented as a list of images, with each image represented as a size-784 integer list (flattened from 28 by 28)
-- Run ```./stats.sh``` to get statistics of data (data/all_data/all_data.json must have been generated already)
-- In order to run reference implementations in ```../models``` directory, the ```-t sample``` tag must be used when running ```./preprocess.sh```
+
+- All client and global metrics are saved in the `results/` directory.
+- The system is modular: you can easily swap models, strategies, or data splits.
+- Designed for research and experimentation with federated learning on realistic, user-partitioned data.
