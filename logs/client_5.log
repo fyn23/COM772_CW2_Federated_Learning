@@ -1,0 +1,386 @@
+/Users/n1646893/Library/CloudStorage/OneDrive-LibertyMutual/Documents/Ulster/MSci/COM772 - Advanced AI/CW2/FEMNIST-CNN/.venv/lib/python3.11/site-packages/keras/src/layers/reshaping/reshape.py:38: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1764520864.327504 3453224 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 3724449b-45f7-4380-95b6-ea5305ec97bf
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520905.711861 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 11b3de9f-46cd-4d77-ae33-01445391829b
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520906.857608 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 923fa089-75e8-488f-aaa9-3d3aa64b15eb
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520913.422093 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7a925d1b-1ef8-430c-8977-47b70cf4272a
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b9c70f9d-56b1-42a7-bd62-e5222f1e5b52
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 4c833a33-6953-42dc-be3a-f88f78603350
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520921.974384 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 7bb309ba-8a4c-4169-8c5b-bd5bafbe11a0
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520928.871999 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 5796b03a-9bf6-4db4-a3fc-fc7a95dfac24
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520929.997374 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 70a14aff-e9da-4053-a32a-572984e2eccf
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520936.802205 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 49bc6909-1ad1-4e55-95b9-7005ec433110
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e58b73eb-0553-41d3-ac31-d46187d669d4
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 676883e8-e054-4f9e-8738-fa0a7d295175
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520944.707795 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 944ccd12-f271-4383-bfce-2042018ec592
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520952.018340 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 20dc9cf1-bb97-49ab-86b8-4a939b2a5d0e
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 7024520c-4c33-467a-869e-35ac33df7952
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 2cc91fdd-759f-41ea-9296-aa99cf496780
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520959.708260 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6fd1019a-b8dc-4b3c-92d1-0cc5698d121b
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 092b24ca-3c22-427c-aea5-e56e98d4ed6c
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ff4fb93b-2128-4279-a600-94e1e486c0b9
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520974.247603 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 9b15e2cf-090c-4737-a4d8-02cf87b84747
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520975.492361 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a92a356f-f9a5-4361-aa4c-44de43db3128
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message c9d4b2cb-d16b-4f87-8bc7-abbc8848046a
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520983.050495 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 7b64ae04-36db-42c4-ab48-832aea636bf8
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 83a79e53-916c-40db-bedd-72243c5f4823
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520990.340639 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 0602444f-e338-4ee5-ad17-c8d0364f9cb1
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764520997.029873 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message fae190ee-f44b-4ecc-9219-e3c475d8c73e
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 41d5f20c-7c36-4313-a2ce-5a5f2e921c77
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d9863816-fc33-4c17-a0e7-910b77ffa02c
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521005.457919 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 25e97cad-a043-40e6-83a2-82a77669a083
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 68d7fe90-c265-4e80-ba27-6dd4731efa27
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521012.821607 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 9d5e6e4f-1a56-4095-ac80-e1ce2c6a5108
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521019.597918 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message a881683b-9bc8-4ea5-abd7-8d1b1d9a533f
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521020.725741 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e2da880e-d924-474e-8a46-b75df3c94da3
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 2e2d359d-53d7-45c8-89d6-cba0fa846aad
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521027.671917 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6e0dfe37-c285-4339-9845-97dea030e925
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521034.744347 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d61619fd-75fd-428a-a4e8-0c78e9a96425
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521035.773664 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message f6d99845-026b-43e9-9d04-91856b1b1e9e
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521042.223311 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message fcf94388-253e-4e3c-975c-6ccb98c91351
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b4c0da73-af34-4783-9f67-da9a04b561d9
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 2c16d490-0fe2-485b-bab8-7532c5c1a463
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521050.819729 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 6d643a18-caf0-4d62-ac55-a3e19ab83563
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 0c76e951-ee2d-4a7b-8a42-eb850428f1ef
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 94a72b51-a19c-412f-beb8-e52bdb992d8c
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521065.242251 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 27271d46-feb7-4e26-9e1d-3398f675f7e5
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 63c5b85b-8b01-4955-815d-251e859f2924
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521072.934716 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 1666cb85-d2cc-452d-b32b-3246c81e5040
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ac425e46-2cdf-41dc-aabc-9590b0d4afda
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6b78a55e-b16c-4567-8319-3c6adfa33767
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 7076c7c7-9070-4b55-b63b-3c15f92116c2
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7b56d995-1937-4755-85c8-3e5cc80293cc
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521089.018279 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message d1246fb6-1ccf-4e6c-8bbe-8982cae4c0d0
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message df81b941-6622-4f4e-9783-6938c5cb6d89
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521096.591549 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message fb0e2978-f162-4e97-bec3-a37ee2607020
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 679bc174-ad27-4afd-9c47-012c3d70bc31
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521104.334466 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 8b47bf69-5856-4338-aa21-70ff130df7cb
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 09f7426a-3f38-4a34-8507-99f0ef39b829
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b6eb74b0-0c44-4339-9a1b-9e99b321c590
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 9cb5af05-c1aa-4bf2-81fb-7f439339072e
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521119.801110 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 9cf09685-f4e6-4e67-beb5-3eb740af121c
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ab75b288-edc6-4d75-9481-144868615960
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521127.409713 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message d6153b6d-6ec5-41af-a133-e948dd08dd99
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 782603db-d96f-4f02-b4e8-bff5aba2606f
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521139.166537 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 0cfe01ff-69ae-4854-8492-8a23f6d5c1ce
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521142.558717 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 383edd7e-034a-4655-bb6b-29a9b20969e6
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a3d21149-bf0a-4169-8743-2a0225394328
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message e0a7d2b8-65f7-4af7-972b-0f2c0f9ae39c
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521150.707717 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 5b3890ca-a91c-4f61-851a-5396036adc45
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 1a15d19c-9d1d-4114-9897-5a47f90b6b63
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521162.632597 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 7b727000-385f-47a9-a840-862c843840bc
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message f0771c94-6f37-4ff6-a4ad-b29934f0f138
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521165.951993 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 73202084-6f12-4c43-baa6-e84732022fc3
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 76cfda86-d606-41ac-b143-d6bcb11d3706
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 12fcbde7-327b-42ed-961b-f465bfe4c241
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521181.274837 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message d1cbd735-a0c9-4d1c-bb43-1a6d4dc7e400
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 22038a6e-a75a-4d29-8559-9a99b39eff1d
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521189.177971 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 9aa8143e-f3e3-4172-8ee2-75de4ba19aaf
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 888410cb-0f45-4c63-99b6-845874270193
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521197.269882 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 0d4337a5-b216-433c-bca1-c296b55a0928
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521198.408046 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 5a5535b7-9112-439c-9a18-bc441afc9059
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521205.150644 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message c95806f7-0a14-4fdb-a633-9813c8f6bd85
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message bc8f75f5-278b-4005-9fd5-84e1d91df29f
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521213.213167 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message ee6fa28b-661a-491f-ac25-79b7119a45cd
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 8c6db2b2-9ffc-4b77-8592-5c167cf74545
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521220.851038 3453257 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 02a1bbf1-18b4-4311-9bdd-9d78cfa49ebb
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 2059c0dc-1a95-468b-b6e5-74c6c7f95a5b
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 758f146a-6899-4c77-bb83-564fbf1b0f61
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521233.302848 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 9d374c0d-66dd-43ba-aa35-2d34e153ba53
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 46b876a0-1846-4c4d-9f9c-182727d5336c
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521237.797079 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 3dfec64b-82c1-43a3-be7f-1bea310bdef4
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521244.810439 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 6741cb66-f221-45a8-8f54-9afe52c0400c
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 478caab1-7ccb-4414-a53b-80a3a872d282
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521252.598965 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 72d8108c-1a61-4a00-9ad6-a4ebfb582465
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 09606b8c-dbc9-45e9-b56e-87479e072f25
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 4de6be41-8302-48ab-845d-7ca9043360bd
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message aca8bcf9-e526-446d-a630-a087d03d3100
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 7e75e360-c050-492c-ae42-d82aae7d4e86
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521268.827796 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 49158551-618f-4fab-9187-da071cd9cb4e
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message 98ac7e41-f7ab-4e5e-bd3e-08a2887bde36
+[92mINFO [0m:      Sent reply
+E0000 00:00:1764521276.813513 3453259 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 4f5d9a64-a509-4682-a520-63dd019e0dff
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: evaluate message f03abfe0-ce4a-47ff-a6b2-6bcd0e3e10cd
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message a26e53b2-c460-4e92-9bd6-a6768fb71119
+[92mINFO [0m:      Disconnect and shut down
+No user specified, randomly selected: f3109_30
+Loading NIID data for user f3109_30...
+Loaded train: (159, 784), test: (18, 784)
+Building model...
+Starting Flower client, connecting to 127.0.0.1:8080...

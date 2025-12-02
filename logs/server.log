@@ -1,0 +1,1054 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      Flower ECE: gRPC server running (50 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1764520806.196041 3451176 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+E0000 00:00:1764520857.934577 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520901.846021 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520903.309144 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520904.369299 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520909.374290 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520910.479067 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520911.572404 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520912.691564 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520917.697007 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520918.843175 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520920.305010 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520925.495105 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520926.566868 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520927.590394 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520933.422054 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520934.700969 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520935.882276 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520940.418571 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520941.606814 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520942.904060 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520948.121676 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520949.293193 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520950.293305 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520955.631744 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520956.646671 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520957.819533 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520958.819967 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520962.767505 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520963.779891 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520964.887954 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520966.093266 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520971.223056 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520972.242996 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520973.460290 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520978.549905 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520979.583215 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520980.609828 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520981.626149 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520985.248376 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520986.479174 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520987.515684 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520988.820108 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764520994.162809 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520995.227211 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764520996.541533 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521001.269360 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521002.303165 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521003.348291 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521009.141919 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521010.314214 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521011.563559 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521015.493627 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521016.862350 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521017.870827 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521018.993220 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521024.220348 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521025.231312 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521026.404145 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521031.485947 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521032.495627 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521033.516954 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521039.249307 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521040.427771 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521041.464410 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521046.895744 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521048.047619 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521049.324800 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521054.155851 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521055.196839 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521056.290321 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521061.919296 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521062.938661 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521063.987168 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521069.931568 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521070.967190 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521072.196175 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521076.896422 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521078.028980 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521079.216659 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521084.676121 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521085.681917 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521086.696157 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521092.596971 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521093.613326 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521095.183311 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521099.980980 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521101.018767 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521102.073187 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521103.078156 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521108.198832 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521109.325781 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521110.358439 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521115.778117 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521116.871828 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521118.094405 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521123.374082 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521124.380946 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521125.398268 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521126.560608 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 31]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521131.401737 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521132.520259 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521133.882517 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 32]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521138.921061 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521140.017243 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521141.085444 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 33]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521146.975107 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521148.024107 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521149.194161 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 34]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521154.102965 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521155.287313 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521156.493218 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 35]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521162.113736 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521163.184956 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521164.252850 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 36]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521169.778241 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521170.821303 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521172.116471 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 37]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521177.454669 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521178.478685 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521179.747024 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 38]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521185.488713 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521186.530907 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521187.840367 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 39]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521192.670699 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521193.849071 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521194.971398 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521196.099126 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 40]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521201.779214 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521202.796409 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521203.824266 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 41]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521209.320495 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521210.666286 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521211.750946 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 42]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521217.235387 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521218.542883 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521219.561810 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521220.642089 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 43]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521225.018006 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521226.067245 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521227.234619 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521228.251313 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 44]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521233.075536 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521234.177798 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521235.575399 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521236.580966 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 45]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521241.224652 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521242.230083 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521243.298170 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521244.298509 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 46]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521249.079132 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521250.141136 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521251.290979 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 47]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521257.132315 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521258.160624 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521259.293170 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 48]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521264.534484 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521265.598917 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521266.687985 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521267.742662 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 49]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521272.709716 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521273.812909 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521274.818282 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521275.954969 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 50]
+[92mINFO [0m:      configure_fit: strategy sampled 20 clients (out of 20)
+E0000 00:00:1764521280.445238 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521281.713555 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+E0000 00:00:1764521283.091394 3451205 tcp_posix.cc:595] recvmsg encountered uncommon error: Message too long
+[92mINFO [0m:      aggregate_fit: received 20 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 20 clients (out of 20)
+[92mINFO [0m:      aggregate_evaluate: received 20 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 50 round(s) in 426.72s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 3.8282768945408683
+[92mINFO [0m:      		round 2: 2.938011292208973
+[92mINFO [0m:      		round 3: 2.156901549579751
+[92mINFO [0m:      		round 4: 1.7748262120617762
+[92mINFO [0m:      		round 5: 1.5963469462262259
+[92mINFO [0m:      		round 6: 1.473804655365455
+[92mINFO [0m:      		round 7: 1.3565940819999092
+[92mINFO [0m:      		round 8: 1.2821400923988757
+[92mINFO [0m:      		round 9: 1.2336970042341795
+[92mINFO [0m:      		round 10: 1.1920444555899017
+[92mINFO [0m:      		round 11: 1.1486168348063261
+[92mINFO [0m:      		round 12: 1.1229359333077047
+[92mINFO [0m:      		round 13: 1.114634890650582
+[92mINFO [0m:      		round 14: 1.0830486446746395
+[92mINFO [0m:      		round 15: 1.0671981927166638
+[92mINFO [0m:      		round 16: 1.0534369863697097
+[92mINFO [0m:      		round 17: 1.0394673534692862
+[92mINFO [0m:      		round 18: 1.0223399998349512
+[92mINFO [0m:      		round 19: 1.0227102133421562
+[92mINFO [0m:      		round 20: 1.0024242302100372
+[92mINFO [0m:      		round 21: 1.0027018469623012
+[92mINFO [0m:      		round 22: 1.012697646362532
+[92mINFO [0m:      		round 23: 0.9879582177720263
+[92mINFO [0m:      		round 24: 1.0044379602066982
+[92mINFO [0m:      		round 25: 0.9811653778848485
+[92mINFO [0m:      		round 26: 1.002317941158564
+[92mINFO [0m:      		round 27: 1.0042194553579276
+[92mINFO [0m:      		round 28: 1.011916293611384
+[92mINFO [0m:      		round 29: 1.0042045842139766
+[92mINFO [0m:      		round 30: 1.0036098242570193
+[92mINFO [0m:      		round 31: 1.0166433895739098
+[92mINFO [0m:      		round 32: 1.0141220138463964
+[92mINFO [0m:      		round 33: 1.0474825219657176
+[92mINFO [0m:      		round 34: 1.0042536119237924
+[92mINFO [0m:      		round 35: 1.0072053886161974
+[92mINFO [0m:      		round 36: 1.0189152917283404
+[92mINFO [0m:      		round 37: 1.0185833241408453
+[92mINFO [0m:      		round 38: 1.0343039076552432
+[92mINFO [0m:      		round 39: 1.0203416291146705
+[92mINFO [0m:      		round 40: 1.0369514652297027
+[92mINFO [0m:      		round 41: 1.0226397986531768
+[92mINFO [0m:      		round 42: 1.0219536682543082
+[92mINFO [0m:      		round 43: 1.0547208398914871
+[92mINFO [0m:      		round 44: 1.0485926045295901
+[92mINFO [0m:      		round 45: 1.060630705442407
+[92mINFO [0m:      		round 46: 1.0495466648354235
+[92mINFO [0m:      		round 47: 1.0633016141712601
+[92mINFO [0m:      		round 48: 1.045018438464747
+[92mINFO [0m:      		round 49: 1.0641716868958921
+[92mINFO [0m:      		round 50: 1.0762863531907718
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'accuracy': [(1, 0.2134013086354799),
+[92mINFO [0m:      	              (2, 0.515416363487981),
+[92mINFO [0m:      	              (3, 0.7705753831557783),
+[92mINFO [0m:      	              (4, 0.8647730005513872),
+[92mINFO [0m:      	              (5, 0.904831273951094),
+[92mINFO [0m:      	              (6, 0.9206117971859733),
+[92mINFO [0m:      	              (7, 0.935421220406539),
+[92mINFO [0m:      	              (8, 0.9521728561873226),
+[92mINFO [0m:      	              (9, 0.9541150799333601),
+[92mINFO [0m:      	              (10, 0.9611556165482877),
+[92mINFO [0m:      	              (11, 0.963826176176143),
+[92mINFO [0m:      	              (12, 0.9613983972062762),
+[92mINFO [0m:      	              (13, 0.9694100543259706),
+[92mINFO [0m:      	              (14, 0.9708667122556562),
+[92mINFO [0m:      	              (15, 0.9742656040897818),
+[92mINFO [0m:      	              (16, 0.9771789279948394),
+[92mINFO [0m:      	              (17, 0.9779072564097971),
+[92mINFO [0m:      	              (18, 0.9820344713192074),
+[92mINFO [0m:      	              (19, 0.9783928149474075),
+[92mINFO [0m:      	              (20, 0.981306148576748),
+[92mINFO [0m:      	              (21, 0.9800922547216756),
+[92mINFO [0m:      	              (22, 0.9844622554261582),
+[92mINFO [0m:      	              (23, 0.9837339147690228),
+[92mINFO [0m:      	              (24, 0.9851905771556715),
+[92mINFO [0m:      	              (25, 0.9805778102493888),
+[92mINFO [0m:      	              (26, 0.980335035336252),
+[92mINFO [0m:      	              (27, 0.9830055890890197),
+[92mINFO [0m:      	              (28, 0.9859189096802964),
+[92mINFO [0m:      	              (29, 0.9849478022714759),
+[92mINFO [0m:      	              (30, 0.9851905773727313),
+[92mINFO [0m:      	              (31, 0.9890750215799665),
+[92mINFO [0m:      	              (32, 0.9873755732390683),
+[92mINFO [0m:      	              (33, 0.9847050225974924),
+[92mINFO [0m:      	              (34, 0.9847050249272685),
+[92mINFO [0m:      	              (35, 0.9861616884570991),
+[92mINFO [0m:      	              (36, 0.9859189136307863),
+[92mINFO [0m:      	              (37, 0.9902889050306352),
+[92mINFO [0m:      	              (38, 0.9900461235622898),
+[92mINFO [0m:      	              (39, 0.9876183467630218),
+[92mINFO [0m:      	              (40, 0.9883466844826133),
+[92mINFO [0m:      	              (41, 0.990531682186724),
+[92mINFO [0m:      	              (42, 0.9893177988662915),
+[92mINFO [0m:      	              (43, 0.9924739047172261),
+[92mINFO [0m:      	              (44, 0.9912600136405202),
+[92mINFO [0m:      	              (45, 0.9890750217391439),
+[92mINFO [0m:      	              (46, 0.9905316861082727),
+[92mINFO [0m:      	              (47, 0.990046128221842),
+[92mINFO [0m:      	              (48, 0.992473899160493),
+[92mINFO [0m:      	              (49, 0.9912600176633635),
+[92mINFO [0m:      	              (50, 0.9917455685604658)],
+[92mINFO [0m:      	 'loss': [(1, 3.231314008344172),
+[92mINFO [0m:      	          (2, 2.0972645363491638),
+[92mINFO [0m:      	          (3, 0.9017974728879838),
+[92mINFO [0m:      	          (4, 0.5209276836838471),
+[92mINFO [0m:      	          (5, 0.3597839050362138),
+[92mINFO [0m:      	          (6, 0.31204076074235615),
+[92mINFO [0m:      	          (7, 0.24881545924379225),
+[92mINFO [0m:      	          (8, 0.19013539277619457),
+[92mINFO [0m:      	          (9, 0.1864780830719078),
+[92mINFO [0m:      	          (10, 0.1539653419035605),
+[92mINFO [0m:      	          (11, 0.13974080597617783),
+[92mINFO [0m:      	          (12, 0.13939017893370712),
+[92mINFO [0m:      	          (13, 0.1272946372745786),
+[92mINFO [0m:      	          (14, 0.11199761506393426),
+[92mINFO [0m:      	          (15, 0.10585737863836372),
+[92mINFO [0m:      	          (16, 0.0961624558596291),
+[92mINFO [0m:      	          (17, 0.09118374918152708),
+[92mINFO [0m:      	          (18, 0.07798329904733366),
+[92mINFO [0m:      	          (19, 0.08675653853913365),
+[92mINFO [0m:      	          (20, 0.07771574316759311),
+[92mINFO [0m:      	          (21, 0.06766242613601262),
+[92mINFO [0m:      	          (22, 0.06014588460869749),
+[92mINFO [0m:      	          (23, 0.061873342699418084),
+[92mINFO [0m:      	          (24, 0.05743501981271286),
+[92mINFO [0m:      	          (25, 0.06270033359626169),
+[92mINFO [0m:      	          (26, 0.07238062765810148),
+[92mINFO [0m:      	          (27, 0.06625824841971636),
+[92mINFO [0m:      	          (28, 0.053876778791887174),
+[92mINFO [0m:      	          (29, 0.052146377015255645),
+[92mINFO [0m:      	          (30, 0.05569614483028629),
+[92mINFO [0m:      	          (31, 0.03976807810622104),
+[92mINFO [0m:      	          (32, 0.05073487546256942),
+[92mINFO [0m:      	          (33, 0.05738650675346154),
+[92mINFO [0m:      	          (34, 0.04792357406290223),
+[92mINFO [0m:      	          (35, 0.05849239123457445),
+[92mINFO [0m:      	          (36, 0.04735932607609805),
+[92mINFO [0m:      	          (37, 0.03745805279178349),
+[92mINFO [0m:      	          (38, 0.03958232546983543),
+[92mINFO [0m:      	          (39, 0.045833709015067586),
+[92mINFO [0m:      	          (40, 0.04322355990367054),
+[92mINFO [0m:      	          (41, 0.033882054554546785),
+[92mINFO [0m:      	          (42, 0.04511471654264278),
+[92mINFO [0m:      	          (43, 0.03313425844774902),
+[92mINFO [0m:      	          (44, 0.04030928017269041),
+[92mINFO [0m:      	          (45, 0.03962029021506454),
+[92mINFO [0m:      	          (46, 0.038969789660379964),
+[92mINFO [0m:      	          (47, 0.02961132119498599),
+[92mINFO [0m:      	          (48, 0.026722636887237056),
+[92mINFO [0m:      	          (49, 0.037508403448208),
+[92mINFO [0m:      	          (50, 0.03039464516009892)],
+[92mINFO [0m:      	 'num_clients': [(1, 20),
+[92mINFO [0m:      	                 (2, 20),
+[92mINFO [0m:      	                 (3, 20),
+[92mINFO [0m:      	                 (4, 20),
+[92mINFO [0m:      	                 (5, 20),
+[92mINFO [0m:      	                 (6, 20),
+[92mINFO [0m:      	                 (7, 20),
+[92mINFO [0m:      	                 (8, 20),
+[92mINFO [0m:      	                 (9, 20),
+[92mINFO [0m:      	                 (10, 20),
+[92mINFO [0m:      	                 (11, 20),
+[92mINFO [0m:      	                 (12, 20),
+[92mINFO [0m:      	                 (13, 20),
+[92mINFO [0m:      	                 (14, 20),
+[92mINFO [0m:      	                 (15, 20),
+[92mINFO [0m:      	                 (16, 20),
+[92mINFO [0m:      	                 (17, 20),
+[92mINFO [0m:      	                 (18, 20),
+[92mINFO [0m:      	                 (19, 20),
+[92mINFO [0m:      	                 (20, 20),
+[92mINFO [0m:      	                 (21, 20),
+[92mINFO [0m:      	                 (22, 20),
+[92mINFO [0m:      	                 (23, 20),
+[92mINFO [0m:      	                 (24, 20),
+[92mINFO [0m:      	                 (25, 20),
+[92mINFO [0m:      	                 (26, 20),
+[92mINFO [0m:      	                 (27, 20),
+[92mINFO [0m:      	                 (28, 20),
+[92mINFO [0m:      	                 (29, 20),
+[92mINFO [0m:      	                 (30, 20),
+[92mINFO [0m:      	                 (31, 20),
+[92mINFO [0m:      	                 (32, 20),
+[92mINFO [0m:      	                 (33, 20),
+[92mINFO [0m:      	                 (34, 20),
+[92mINFO [0m:      	                 (35, 20),
+[92mINFO [0m:      	                 (36, 20),
+[92mINFO [0m:      	                 (37, 20),
+[92mINFO [0m:      	                 (38, 20),
+[92mINFO [0m:      	                 (39, 20),
+[92mINFO [0m:      	                 (40, 20),
+[92mINFO [0m:      	                 (41, 20),
+[92mINFO [0m:      	                 (42, 20),
+[92mINFO [0m:      	                 (43, 20),
+[92mINFO [0m:      	                 (44, 20),
+[92mINFO [0m:      	                 (45, 20),
+[92mINFO [0m:      	                 (46, 20),
+[92mINFO [0m:      	                 (47, 20),
+[92mINFO [0m:      	                 (48, 20),
+[92mINFO [0m:      	                 (49, 20),
+[92mINFO [0m:      	                 (50, 20)],
+[92mINFO [0m:      	 'total_examples': [(1, 4119),
+[92mINFO [0m:      	                    (2, 4119),
+[92mINFO [0m:      	                    (3, 4119),
+[92mINFO [0m:      	                    (4, 4119),
+[92mINFO [0m:      	                    (5, 4119),
+[92mINFO [0m:      	                    (6, 4119),
+[92mINFO [0m:      	                    (7, 4119),
+[92mINFO [0m:      	                    (8, 4119),
+[92mINFO [0m:      	                    (9, 4119),
+[92mINFO [0m:      	                    (10, 4119),
+[92mINFO [0m:      	                    (11, 4119),
+[92mINFO [0m:      	                    (12, 4119),
+[92mINFO [0m:      	                    (13, 4119),
+[92mINFO [0m:      	                    (14, 4119),
+[92mINFO [0m:      	                    (15, 4119),
+[92mINFO [0m:      	                    (16, 4119),
+[92mINFO [0m:      	                    (17, 4119),
+[92mINFO [0m:      	                    (18, 4119),
+[92mINFO [0m:      	                    (19, 4119),
+[92mINFO [0m:      	                    (20, 4119),
+[92mINFO [0m:      	                    (21, 4119),
+[92mINFO [0m:      	                    (22, 4119),
+[92mINFO [0m:      	                    (23, 4119),
+[92mINFO [0m:      	                    (24, 4119),
+[92mINFO [0m:      	                    (25, 4119),
+[92mINFO [0m:      	                    (26, 4119),
+[92mINFO [0m:      	                    (27, 4119),
+[92mINFO [0m:      	                    (28, 4119),
+[92mINFO [0m:      	                    (29, 4119),
+[92mINFO [0m:      	                    (30, 4119),
+[92mINFO [0m:      	                    (31, 4119),
+[92mINFO [0m:      	                    (32, 4119),
+[92mINFO [0m:      	                    (33, 4119),
+[92mINFO [0m:      	                    (34, 4119),
+[92mINFO [0m:      	                    (35, 4119),
+[92mINFO [0m:      	                    (36, 4119),
+[92mINFO [0m:      	                    (37, 4119),
+[92mINFO [0m:      	                    (38, 4119),
+[92mINFO [0m:      	                    (39, 4119),
+[92mINFO [0m:      	                    (40, 4119),
+[92mINFO [0m:      	                    (41, 4119),
+[92mINFO [0m:      	                    (42, 4119),
+[92mINFO [0m:      	                    (43, 4119),
+[92mINFO [0m:      	                    (44, 4119),
+[92mINFO [0m:      	                    (45, 4119),
+[92mINFO [0m:      	                    (46, 4119),
+[92mINFO [0m:      	                    (47, 4119),
+[92mINFO [0m:      	                    (48, 4119),
+[92mINFO [0m:      	                    (49, 4119),
+[92mINFO [0m:      	                    (50, 4119)]}
+[92mINFO [0m:      	History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'accuracy': [(1, 0.0769230783240408),
+[92mINFO [0m:      	              (2, 0.32051282407891035),
+[92mINFO [0m:      	              (3, 0.4786324826443297),
+[92mINFO [0m:      	              (4, 0.5598290710367708),
+[92mINFO [0m:      	              (5, 0.594017102359197),
+[92mINFO [0m:      	              (6, 0.6132478645214667),
+[92mINFO [0m:      	              (7, 0.6346153827686595),
+[92mINFO [0m:      	              (8, 0.6495726539029015),
+[92mINFO [0m:      	              (9, 0.6474358961622939),
+[92mINFO [0m:      	              (10, 0.690170946602638),
+[92mINFO [0m:      	              (11, 0.7072649657344207),
+[92mINFO [0m:      	              (12, 0.6965812096356326),
+[92mINFO [0m:      	              (13, 0.6987179580789346),
+[92mINFO [0m:      	              (14, 0.724358980726992),
+[92mINFO [0m:      	              (15, 0.737179494693748),
+[92mINFO [0m:      	              (16, 0.7307692394297347),
+[92mINFO [0m:      	              (17, 0.7393162422455274),
+[92mINFO [0m:      	              (18, 0.7500000051580943),
+[92mINFO [0m:      	              (19, 0.7521367600330939),
+[92mINFO [0m:      	              (20, 0.7500000065590582),
+[92mINFO [0m:      	              (21, 0.7500000056675357),
+[92mINFO [0m:      	              (22, 0.7478632540402249),
+[92mINFO [0m:      	              (23, 0.7499999995542388),
+[92mINFO [0m:      	              (24, 0.7500000071958599),
+[92mINFO [0m:      	              (25, 0.7542735059291888),
+[92mINFO [0m:      	              (26, 0.7542735123608866),
+[92mINFO [0m:      	              (27, 0.7585470084196482),
+[92mINFO [0m:      	              (28, 0.7521367579953283),
+[92mINFO [0m:      	              (29, 0.7542735083490355),
+[92mINFO [0m:      	              (30, 0.7478632462075633),
+[92mINFO [0m:      	              (31, 0.7585470104574138),
+[92mINFO [0m:      	              (32, 0.7521367581226887),
+[92mINFO [0m:      	              (33, 0.7414529933633968),
+[92mINFO [0m:      	              (34, 0.7478632532760628),
+[92mINFO [0m:      	              (35, 0.7542735068207114),
+[92mINFO [0m:      	              (36, 0.7564102574291393),
+[92mINFO [0m:      	              (37, 0.7564102588301032),
+[92mINFO [0m:      	              (38, 0.7670940151836119),
+[92mINFO [0m:      	              (39, 0.7628205221178185),
+[92mINFO [0m:      	              (40, 0.7564102618867515),
+[92mINFO [0m:      	              (41, 0.7585470072734051),
+[92mINFO [0m:      	              (42, 0.7649572668676703),
+[92mINFO [0m:      	              (43, 0.7585470117310174),
+[92mINFO [0m:      	              (44, 0.7564102607405084),
+[92mINFO [0m:      	              (45, 0.7628205130752336),
+[92mINFO [0m:      	              (46, 0.7606837587733554),
+[92mINFO [0m:      	              (47, 0.7692307727968591),
+[92mINFO [0m:      	              (48, 0.7606837624668056),
+[92mINFO [0m:      	              (49, 0.7542735021083783),
+[92mINFO [0m:      	              (50, 0.7500000026745673)],
+[92mINFO [0m:      	 'loss': [(1, 3.8282768945408683),
+[92mINFO [0m:      	          (2, 2.938011292208973),
+[92mINFO [0m:      	          (3, 2.156901549579751),
+[92mINFO [0m:      	          (4, 1.7748262120617762),
+[92mINFO [0m:      	          (5, 1.5963469462262259),
+[92mINFO [0m:      	          (6, 1.473804655365455),
+[92mINFO [0m:      	          (7, 1.3565940819999092),
+[92mINFO [0m:      	          (8, 1.2821400923988757),
+[92mINFO [0m:      	          (9, 1.2336970042341795),
+[92mINFO [0m:      	          (10, 1.1920444555899017),
+[92mINFO [0m:      	          (11, 1.1486168348063261),
+[92mINFO [0m:      	          (12, 1.1229359333077047),
+[92mINFO [0m:      	          (13, 1.114634890650582),
+[92mINFO [0m:      	          (14, 1.0830486446746395),
+[92mINFO [0m:      	          (15, 1.0671981927166638),
+[92mINFO [0m:      	          (16, 1.0534369863697097),
+[92mINFO [0m:      	          (17, 1.0394673534692862),
+[92mINFO [0m:      	          (18, 1.0223399998349512),
+[92mINFO [0m:      	          (19, 1.0227102133421562),
+[92mINFO [0m:      	          (20, 1.0024242302100372),
+[92mINFO [0m:      	          (21, 1.0027018469623012),
+[92mINFO [0m:      	          (22, 1.012697646362532),
+[92mINFO [0m:      	          (23, 0.9879582177720263),
+[92mINFO [0m:      	          (24, 1.0044379602066982),
+[92mINFO [0m:      	          (25, 0.9811653778848485),
+[92mINFO [0m:      	          (26, 1.002317941158564),
+[92mINFO [0m:      	          (27, 1.0042194553579276),
+[92mINFO [0m:      	          (28, 1.011916293611384),
+[92mINFO [0m:      	          (29, 1.0042045842139766),
+[92mINFO [0m:      	          (30, 1.0036098242570193),
+[92mINFO [0m:      	          (31, 1.0166433895739098),
+[92mINFO [0m:      	          (32, 1.0141220138463964),
+[92mINFO [0m:      	          (33, 1.0474825219657176),
+[92mINFO [0m:      	          (34, 1.0042536119237924),
+[92mINFO [0m:      	          (35, 1.0072053886161974),
+[92mINFO [0m:      	          (36, 1.0189152917283404),
+[92mINFO [0m:      	          (37, 1.0185833241408453),
+[92mINFO [0m:      	          (38, 1.0343039076552432),
+[92mINFO [0m:      	          (39, 1.0203416291146705),
+[92mINFO [0m:      	          (40, 1.0369514652297027),
+[92mINFO [0m:      	          (41, 1.0226397986531768),
+[92mINFO [0m:      	          (42, 1.0219536682543082),
+[92mINFO [0m:      	          (43, 1.0547208398914871),
+[92mINFO [0m:      	          (44, 1.0485926045295901),
+[92mINFO [0m:      	          (45, 1.060630705442407),
+[92mINFO [0m:      	          (46, 1.0495466648354235),
+[92mINFO [0m:      	          (47, 1.0633016141712601),
+[92mINFO [0m:      	          (48, 1.045018438464747),
+[92mINFO [0m:      	          (49, 1.0641716868958921),
+[92mINFO [0m:      	          (50, 1.0762863531907718)],
+[92mINFO [0m:      	 'num_clients': [(1, 20),
+[92mINFO [0m:      	                 (2, 20),
+[92mINFO [0m:      	                 (3, 20),
+[92mINFO [0m:      	                 (4, 20),
+[92mINFO [0m:      	                 (5, 20),
+[92mINFO [0m:      	                 (6, 20),
+[92mINFO [0m:      	                 (7, 20),
+[92mINFO [0m:      	                 (8, 20),
+[92mINFO [0m:      	                 (9, 20),
+[92mINFO [0m:      	                 (10, 20),
+[92mINFO [0m:      	                 (11, 20),
+[92mINFO [0m:      	                 (12, 20),
+[92mINFO [0m:      	                 (13, 20),
+[92mINFO [0m:      	                 (14, 20),
+[92mINFO [0m:      	                 (15, 20),
+[92mINFO [0m:      	                 (16, 20),
+[92mINFO [0m:      	                 (17, 20),
+[92mINFO [0m:      	                 (18, 20),
+[92mINFO [0m:      	                 (19, 20),
+[92mINFO [0m:      	                 (20, 20),
+[92mINFO [0m:      	                 (21, 20),
+[92mINFO [0m:      	                 (22, 20),
+[92mINFO [0m:      	                 (23, 20),
+[92mINFO [0m:      	                 (24, 20),
+[92mINFO [0m:      	                 (25, 20),
+[92mINFO [0m:      	                 (26, 20),
+[92mINFO [0m:      	                 (27, 20),
+[92mINFO [0m:      	                 (28, 20),
+[92mINFO [0m:      	                 (29, 20),
+[92mINFO [0m:      	                 (30, 20),
+[92mINFO [0m:      	                 (31, 20),
+[92mINFO [0m:      	                 (32, 20),
+[92mINFO [0m:      	                 (33, 20),
+[92mINFO [0m:      	                 (34, 20),
+[92mINFO [0m:      	                 (35, 20),
+[92mINFO [0m:      	                 (36, 20),
+[92mINFO [0m:      	                 (37, 20),
+[92mINFO [0m:      	                 (38, 20),
+[92mINFO [0m:      	                 (39, 20),
+[92mINFO [0m:      	                 (40, 20),
+[92mINFO [0m:      	                 (41, 20),
+[92mINFO [0m:      	                 (42, 20),
+[92mINFO [0m:      	                 (43, 20),
+[92mINFO [0m:      	                 (44, 20),
+[92mINFO [0m:      	                 (45, 20),
+[92mINFO [0m:      	                 (46, 20),
+[92mINFO [0m:      	                 (47, 20),
+[92mINFO [0m:      	                 (48, 20),
+[92mINFO [0m:      	                 (49, 20),
+[92mINFO [0m:      	                 (50, 20)],
+[92mINFO [0m:      	 'total_examples': [(1, 468),
+[92mINFO [0m:      	                    (2, 468),
+[92mINFO [0m:      	                    (3, 468),
+[92mINFO [0m:      	                    (4, 468),
+[92mINFO [0m:      	                    (5, 468),
+[92mINFO [0m:      	                    (6, 468),
+[92mINFO [0m:      	                    (7, 468),
+[92mINFO [0m:      	                    (8, 468),
+[92mINFO [0m:      	                    (9, 468),
+[92mINFO [0m:      	                    (10, 468),
+[92mINFO [0m:      	                    (11, 468),
+[92mINFO [0m:      	                    (12, 468),
+[92mINFO [0m:      	                    (13, 468),
+[92mINFO [0m:      	                    (14, 468),
+[92mINFO [0m:      	                    (15, 468),
+[92mINFO [0m:      	                    (16, 468),
+[92mINFO [0m:      	                    (17, 468),
+[92mINFO [0m:      	                    (18, 468),
+[92mINFO [0m:      	                    (19, 468),
+[92mINFO [0m:      	                    (20, 468),
+[92mINFO [0m:      	                    (21, 468),
+[92mINFO [0m:      	                    (22, 468),
+[92mINFO [0m:      	                    (23, 468),
+[92mINFO [0m:      	                    (24, 468),
+[92mINFO [0m:      	                    (25, 468),
+[92mINFO [0m:      	                    (26, 468),
+[92mINFO [0m:      	                    (27, 468),
+[92mINFO [0m:      	                    (28, 468),
+[92mINFO [0m:      	                    (29, 468),
+[92mINFO [0m:      	                    (30, 468),
+[92mINFO [0m:      	                    (31, 468),
+[92mINFO [0m:      	                    (32, 468),
+[92mINFO [0m:      	                    (33, 468),
+[92mINFO [0m:      	                    (34, 468),
+[92mINFO [0m:      	                    (35, 468),
+[92mINFO [0m:      	                    (36, 468),
+[92mINFO [0m:      	                    (37, 468),
+[92mINFO [0m:      	                    (38, 468),
+[92mINFO [0m:      	                    (39, 468),
+[92mINFO [0m:      	                    (40, 468),
+[92mINFO [0m:      	                    (41, 468),
+[92mINFO [0m:      	                    (42, 468),
+[92mINFO [0m:      	                    (43, 468),
+[92mINFO [0m:      	                    (44, 468),
+[92mINFO [0m:      	                    (45, 468),
+[92mINFO [0m:      	                    (46, 468),
+[92mINFO [0m:      	                    (47, 468),
+[92mINFO [0m:      	                    (48, 468),
+[92mINFO [0m:      	                    (49, 468),
+[92mINFO [0m:      	                    (50, 468)]}
+[92mINFO [0m:      
+Starting Flower server...
+  Address: 127.0.0.1:8080
+  Rounds: 50
+  Min clients: 20
+  Fraction fit: 1.0
+  Fraction evaluate: 1.0
+  Output CSV: results/20clients_50rounds_niid_20251130_164003_metrics.csv
+  Run name: 20clients_50rounds_niid_20251130_164003
+Round 1 - Train Loss: 3.2313, Train Acc: 0.2134
+Round 1 - Eval Loss: 3.8283, Eval Acc: 0.0769
+Round 2 - Train Loss: 2.0973, Train Acc: 0.5154
+Round 2 - Eval Loss: 2.9380, Eval Acc: 0.3205
+Round 3 - Train Loss: 0.9018, Train Acc: 0.7706
+Round 3 - Eval Loss: 2.1569, Eval Acc: 0.4786
+Round 4 - Train Loss: 0.5209, Train Acc: 0.8648
+Round 4 - Eval Loss: 1.7748, Eval Acc: 0.5598
+Round 5 - Train Loss: 0.3598, Train Acc: 0.9048
+Round 5 - Eval Loss: 1.5963, Eval Acc: 0.5940
+Round 6 - Train Loss: 0.3120, Train Acc: 0.9206
+Round 6 - Eval Loss: 1.4738, Eval Acc: 0.6132
+Round 7 - Train Loss: 0.2488, Train Acc: 0.9354
+Round 7 - Eval Loss: 1.3566, Eval Acc: 0.6346
+Round 8 - Train Loss: 0.1901, Train Acc: 0.9522
+Round 8 - Eval Loss: 1.2821, Eval Acc: 0.6496
+Round 9 - Train Loss: 0.1865, Train Acc: 0.9541
+Round 9 - Eval Loss: 1.2337, Eval Acc: 0.6474
+Round 10 - Train Loss: 0.1540, Train Acc: 0.9612
+Round 10 - Eval Loss: 1.1920, Eval Acc: 0.6902
+Round 11 - Train Loss: 0.1397, Train Acc: 0.9638
+Round 11 - Eval Loss: 1.1486, Eval Acc: 0.7073
+Round 12 - Train Loss: 0.1394, Train Acc: 0.9614
+Round 12 - Eval Loss: 1.1229, Eval Acc: 0.6966
+Round 13 - Train Loss: 0.1273, Train Acc: 0.9694
+Round 13 - Eval Loss: 1.1146, Eval Acc: 0.6987
+Round 14 - Train Loss: 0.1120, Train Acc: 0.9709
+Round 14 - Eval Loss: 1.0830, Eval Acc: 0.7244
+Round 15 - Train Loss: 0.1059, Train Acc: 0.9743
+Round 15 - Eval Loss: 1.0672, Eval Acc: 0.7372
+Round 16 - Train Loss: 0.0962, Train Acc: 0.9772
+Round 16 - Eval Loss: 1.0534, Eval Acc: 0.7308
+Round 17 - Train Loss: 0.0912, Train Acc: 0.9779
+Round 17 - Eval Loss: 1.0395, Eval Acc: 0.7393
+Round 18 - Train Loss: 0.0780, Train Acc: 0.9820
+Round 18 - Eval Loss: 1.0223, Eval Acc: 0.7500
+Round 19 - Train Loss: 0.0868, Train Acc: 0.9784
+Round 19 - Eval Loss: 1.0227, Eval Acc: 0.7521
+Round 20 - Train Loss: 0.0777, Train Acc: 0.9813
+Round 20 - Eval Loss: 1.0024, Eval Acc: 0.7500
+Round 21 - Train Loss: 0.0677, Train Acc: 0.9801
+Round 21 - Eval Loss: 1.0027, Eval Acc: 0.7500
+Round 22 - Train Loss: 0.0601, Train Acc: 0.9845
+Round 22 - Eval Loss: 1.0127, Eval Acc: 0.7479
+Round 23 - Train Loss: 0.0619, Train Acc: 0.9837
+Round 23 - Eval Loss: 0.9880, Eval Acc: 0.7500
+Round 24 - Train Loss: 0.0574, Train Acc: 0.9852
+Round 24 - Eval Loss: 1.0044, Eval Acc: 0.7500
+Round 25 - Train Loss: 0.0627, Train Acc: 0.9806
+Round 25 - Eval Loss: 0.9812, Eval Acc: 0.7543
+Round 26 - Train Loss: 0.0724, Train Acc: 0.9803
+Round 26 - Eval Loss: 1.0023, Eval Acc: 0.7543
+Round 27 - Train Loss: 0.0663, Train Acc: 0.9830
+Round 27 - Eval Loss: 1.0042, Eval Acc: 0.7585
+Round 28 - Train Loss: 0.0539, Train Acc: 0.9859
+Round 28 - Eval Loss: 1.0119, Eval Acc: 0.7521
+Round 29 - Train Loss: 0.0521, Train Acc: 0.9849
+Round 29 - Eval Loss: 1.0042, Eval Acc: 0.7543
+Round 30 - Train Loss: 0.0557, Train Acc: 0.9852
+Round 30 - Eval Loss: 1.0036, Eval Acc: 0.7479
+Round 31 - Train Loss: 0.0398, Train Acc: 0.9891
+Round 31 - Eval Loss: 1.0166, Eval Acc: 0.7585
+Round 32 - Train Loss: 0.0507, Train Acc: 0.9874
+Round 32 - Eval Loss: 1.0141, Eval Acc: 0.7521
+Round 33 - Train Loss: 0.0574, Train Acc: 0.9847
+Round 33 - Eval Loss: 1.0475, Eval Acc: 0.7415
+Round 34 - Train Loss: 0.0479, Train Acc: 0.9847
+Round 34 - Eval Loss: 1.0043, Eval Acc: 0.7479
+Round 35 - Train Loss: 0.0585, Train Acc: 0.9862
+Round 35 - Eval Loss: 1.0072, Eval Acc: 0.7543
+Round 36 - Train Loss: 0.0474, Train Acc: 0.9859
+Round 36 - Eval Loss: 1.0189, Eval Acc: 0.7564
+Round 37 - Train Loss: 0.0375, Train Acc: 0.9903
+Round 37 - Eval Loss: 1.0186, Eval Acc: 0.7564
+Round 38 - Train Loss: 0.0396, Train Acc: 0.9900
+Round 38 - Eval Loss: 1.0343, Eval Acc: 0.7671
+Round 39 - Train Loss: 0.0458, Train Acc: 0.9876
+Round 39 - Eval Loss: 1.0203, Eval Acc: 0.7628
+Round 40 - Train Loss: 0.0432, Train Acc: 0.9883
+Round 40 - Eval Loss: 1.0370, Eval Acc: 0.7564
+Round 41 - Train Loss: 0.0339, Train Acc: 0.9905
+Round 41 - Eval Loss: 1.0226, Eval Acc: 0.7585
+Round 42 - Train Loss: 0.0451, Train Acc: 0.9893
+Round 42 - Eval Loss: 1.0220, Eval Acc: 0.7650
+Round 43 - Train Loss: 0.0331, Train Acc: 0.9925
+Round 43 - Eval Loss: 1.0547, Eval Acc: 0.7585
+Round 44 - Train Loss: 0.0403, Train Acc: 0.9913
+Round 44 - Eval Loss: 1.0486, Eval Acc: 0.7564
+Round 45 - Train Loss: 0.0396, Train Acc: 0.9891
+Round 45 - Eval Loss: 1.0606, Eval Acc: 0.7628
+Round 46 - Train Loss: 0.0390, Train Acc: 0.9905
+Round 46 - Eval Loss: 1.0495, Eval Acc: 0.7607
+Round 47 - Train Loss: 0.0296, Train Acc: 0.9900
+Round 47 - Eval Loss: 1.0633, Eval Acc: 0.7692
+Round 48 - Train Loss: 0.0267, Train Acc: 0.9925
+Round 48 - Eval Loss: 1.0450, Eval Acc: 0.7607
+Round 49 - Train Loss: 0.0375, Train Acc: 0.9913
+Round 49 - Eval Loss: 1.0642, Eval Acc: 0.7543
+Round 50 - Train Loss: 0.0304, Train Acc: 0.9917
+Round 50 - Eval Loss: 1.0763, Eval Acc: 0.7500
