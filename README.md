@@ -84,3 +84,5 @@ This project implements federated learning on the FEMNIST dataset using the Flow
 - All client and global metrics are saved in the `results/` directory.
 - The system is modular: you can easily swap models, strategies, or data splits.
 - Designed for research and experimentation with federated learning on realistic, user-partitioned data.
+- - Acknowledgement: Visual Studio Copilot was used to suggest code snippets and documentation in this project. All suggestions were reviewed, edited where necessary and approved by the project author. <img width="468" height="54" alt="image" src="https://github.com/user-attachments/assets/e7cf8cd0-514f-46e6-a68d-a2b388002098" />
+
