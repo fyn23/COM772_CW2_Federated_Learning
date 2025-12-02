@@ -33,6 +33,7 @@ This project implements federated learning on the FEMNIST dataset using the Flow
 2. Convert to JSON, group by writer, filter users, sample, and split into train/test sets (IID and non-IID).
 3. Output: Per-client data directories for federated simulation.
 4. You will need to paste the outputted directories to data_niid or data_iid under preprocess/femnist/ or change the directory in line 42 of client.py to match the training/test splits
+5. If this does not work please visit: https://leaf.cmu.edu/ and clone their data preprocessing scripts directly
 
 ## Federated Learning Flow
 
